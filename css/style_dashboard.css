@@ -1,0 +1,129 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: url('../img/cars_bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+	width: 100%;       /* Full width */
+    height: 100vh;     /* Full height of the viewport */
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+#logoid {
+		color: white;
+		cursor: pointer;
+		text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Login Form */
+h1 {
+    margin-top: 50px;
+    color: white;
+	font-size: 10vh;
+}
+
+p {
+	font-size: 5vh;
+}
+
+.history {
+	background-color: rgba(88,88,88,0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;     /* Center content */
+    justify-content: center;
+    align-items: center;
+}	
+
+.history table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history th, .history td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.history th {
+    background-color: #007bff;
+    color: white;
+}
+
+.history tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.history tr:hover {
+    background-color: #ddd;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Register Link */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
