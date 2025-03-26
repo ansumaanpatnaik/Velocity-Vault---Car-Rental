@@ -95,6 +95,34 @@
 			<p>Phone: +123 456 7890</p> 
 	</section>
     <script>
+
+	//Hide extra payment mode input fields
+	document.addEventListener("DOMContentLoaded", function () {
+	    let paymentMethod = document.getElementById("payment-method");
+	    let cardSection = document.getElementById("credit-card-section");
+	    let paypalSection = document.getElementById("paypal-section");
+	
+	    function togglePaymentInput() {
+	        let selectedMethod = paymentMethod.value;
+	
+	        if (selectedMethod === "credit_card") {
+	            cardSection.style.display = "block";
+	            paypalSection.style.display = "none";
+	        } else if (selectedMethod === "paypal") {
+	            paypalSection.style.display = "block";
+	            cardSection.style.display = "none";
+	        } else {
+	            cardSection.style.display = "none";
+	            paypalSection.style.display = "none";
+	        }
+	    }
+
+	    if (paymentMethod) {
+	        paymentMethod.addEventListener("change", togglePaymentInput);
+	        togglePaymentInput(); // Run on page load
+	    }
+	});
+
         // Set today's date as the minimum for pickup
         document.addEventListener("DOMContentLoaded", function () {
             let today = new Date().toISOString().split("T")[0];
