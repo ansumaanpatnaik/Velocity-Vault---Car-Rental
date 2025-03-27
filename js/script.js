@@ -22,19 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Auto-Fill Checkout Fields If Logged In
-    let nameField = document.getElementById("name");
-    let emailField = document.getElementById("email");
-    if (nameField && emailField) {
-        fetch("session_check.php")
-            .then(response => response.json())
-            .then(data => {
-                if (data.loggedIn) {
-                    nameField.value = data.name;
-                    emailField.value = data.email;
-                }
-            });
-    }
+    
 
     // Update Cost on Car Selection Change
     let carSelection = document.getElementById("car-selection");
