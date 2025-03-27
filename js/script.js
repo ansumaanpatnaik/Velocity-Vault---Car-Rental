@@ -69,44 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
- /*// Smooth scroll to Fleet Section when "Book Now" is clicked
-function scrollToFleet() {
-    document.getElementById("fleet-section").scrollIntoView({ behavior: "smooth" });
-}
-
-// Mobile Menu Toggle
-function toggleMenu() {
-    let menu = document.getElementById("nav-menu");
-    menu.classList.toggle("active");
-}
-
-// Form Validation for Booking
-function validateBookingForm() {
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let pickupDate = document.getElementById("pickup-date").value;
-    let returnDate = document.getElementById("return-date").value;
-
-    if (name === "" || email === "" || pickupDate === "" || returnDate === "") {
-        alert("Please fill out all booking fields.");
-        return false;
-    }
-
-    if (new Date(pickupDate) > new Date(returnDate)) {
-        alert("Return date must be after the pickup date.");
-        return false;
-    }
-
-    alert("Booking successful!");
-    return true;
-}
-
-
-
-// Auto-fill today’s date in the pickup field
-document.addEventListener("DOMContentLoaded", function () {
-    let today = new Date().toISOString().split("T")[0];
-    document.getElementById("pickup-date").setAttribute("min", today);
-    document.getElementById("return-date").setAttribute("min", today);
-});*/
 
