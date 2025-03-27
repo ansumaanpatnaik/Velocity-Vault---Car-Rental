@@ -111,8 +111,8 @@
 	<section id="contact" style="background: black; color: white; font-size: large; text-align: center;">
 			<br>
 			<p> Contact us at:</p> 
-			<p>Email: support@carrental.com</p> 
-			<p>Phone: +123 456 7890</p> 
+			<p>Email: support@velocityvault.com</p> 
+			<p>Phone: +918456789053</p> 
 	</section>
 	
 </body>
